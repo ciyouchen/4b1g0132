@@ -1,44 +1,31 @@
-class Course:
-    def__init__(self,course_name,course_id,course_credits):
-self.stu_name=stu_name
-self.stu_id=stu_id
+class Dog:
+    def __init__(self, name, age, height):
+        self._name = name
+        self._age = age
+        self._height = height
 
+    def bark(self):
+        print(f"{self._name} is barking!")
 
-class Student:
-    def__init__(self,stu_name,stu_id):
-    self.stu_name=stu_name
-    self.stu_id=stu_id
+# 創建三個Dog
+a1 = Dog('小黑', '5', '50')
+a2 = Dog('小白', '3', '40')
+a3 = Dog('小黃', '7', '60')
 
-def__str__(self):
-return f "Course Name: {self/stu_name}\nid = {self.stu_id}"
+# 輸出每個狗狗的資訊
+print("狗a1姓名 =", a1._name)
+print("狗a1年齡 =", a1._age)
+print("狗a1身高 =", a1._height)
 
-def addCrouse(self,course_info=course_info):
-    self.course_info = course_info
+print("狗a2姓名 =", a2._name)
+print("狗a2年齡 =", a2._age)
+print("狗a2身高 =", a2._height)
 
-c1 = Course(course_name="套裝軟體應用",
-            course_id="(4B1G0132",
-            course_credits=3)
- s1 = Student(stu_name="陳祈佑",)              
+print("狗a3姓名 =", a3._name)
+print("狗a3年齡 =", a3._age)
+print("狗a3身高 =", a3._height)
 
-
-
-def addCourse(self,course_name,course_id,course_)
-    
-
-
-class Person:
-    def_init_(self,stu_name,age):
-self.stu_name=stu_name
-self.stu_id=stu_id
-
-
-
-
-def_str_(self):
-return f"Name:{self.name}\nage={self.age}"
-
-p1 = Person("John,36")
-print(p1)
-
-p2 = Person("Sue,22")
-printf(p2.__dict__)
+# 使用bark方法
+a1.bark()
+a2.bark()
+a3.bark()
